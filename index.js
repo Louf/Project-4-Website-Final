@@ -141,6 +141,9 @@ function myMap() {
 
             google.maps.event.addListener(markers[i], 'dblclick', function () {
                 infoWindow.setContent(generateContent("Guess me!", this.id));
+                infoWindow.setOptions({
+                    disableAutoPan: true
+                })
                 infoWindow.open(map, this);
             });
         }
