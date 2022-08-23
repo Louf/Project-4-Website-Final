@@ -1,0 +1,51 @@
+/* Removes text from the bottom of Google maps, for a cleaner appearance */
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.title-section {
+    margin: auto;
+}
+
+.centered-text {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+.yellow-box {
+    width: 24px;
+    height: 24px;
+    background-color: yellow;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.column {
+    flex: 50%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.list {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    width: 94.5%;
+}

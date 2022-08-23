@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+                <div class="title-section"> 
+                    <h1 class="inline-block">The CSUN Game</h1>
+                    <div class="yellow-box inline-block"></div>
+                    <div class="centered-text inline-block"> = possible guesses</div>
+                </div>
+        
+                <div id="googleMap" style="width:90%;height:750px;"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCH1X_pjkGulMXdNww4j8Ur2HL6EKFWEQ&libraries=places&callback=myMap" defer></script>
+                <div style="justify-content: space-between; display: flex; flex-direction: row; margin-right: 85px; align-content: center;">
+                    <h1 id="highscore">Highscore: 0</h1>
+                    <button style="height: 30px;" id="reset">Reset</button>
+                </div>
+            </div>
+            <div class="column">
+                <div style="justify-content: space-between; display: flex; flex-direction: column; ">
+                    <div style="justify-content: space-between; display: flex; flex-direction: row; margin-right: 35px;">
+                        <h1 class="">Guesses</h1>
+                        <h1 id="score" style="color: green;">0</h1>
+                        <h1 id="guesses-left">5 guesses left</h1>
+                    </div>
+                    <div id="game" style="flex: 1;">
+    
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <button style="display: none;" id="hidden-button" onclick="addRow()"></button>
+        
+    </body>
+</html>
