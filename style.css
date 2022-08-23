@@ -22,17 +22,6 @@
     transform: translateY(-40%);
 }
 
-.yellow-box {
-    width: 24px;
-    height: 24px;
-    background-color: yellow;
-}
-
-.inline-block {
-    display: inline-block;
-    margin-left: 10px;
-}
-
 .column {
     flex: 50%;
     height: 100%;
